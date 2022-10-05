@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution
-  URL: []()
+  URL: [https://www.frontendmentor.io/solutions/starting-in-javascript-is7muURSzQ](https://www.frontendmentor.io/solutions/starting-in-javascript-is7muURSzQ)
 - Live Site
   URL: [https://jorggyh.github.io/faq-accordion-card/](https://jorggyh.github.io/faq-accordion-card/)
 
