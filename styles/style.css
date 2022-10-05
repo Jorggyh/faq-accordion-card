@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 62.5%; /* 10px = 1rem */
+}
+
+:root {
+	--very-dark-desaturated-blue: hsl(238, 29%, 16%);
+	--soft-red: hsl(14, 88%, 65%);
+	--soft-violet: hsl(273, 75%, 66%);
+	--soft-blue: hsl(240, 73%, 65%);
+	--very-dark-grayish-blue: hsl(237, 12%, 33%);
+	--dark-grayish-blue: hsl(240, 6%, 49%);
+	--light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Kumbh Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(180deg, hsl(273, 75%, 66%) 40%, hsl(240, 73%, 65%));
+}
+
+.container {
+	max-width: 40rem;
+	margin: 14.8rem 2.4rem 6rem;
+}
+
+main {
+	width: 32.7rem;
+	background-color: white;
+	padding: 13rem 2.4rem 4.8rem;
+	border-radius: 3rem;
+	position: relative;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 2rem 3rem;
+	min-height: fit-content;
+}
+
+main::before {
+	content: url('../img/bg-pattern-mobile.svg');
+	width: 23.7rem;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+main::after {
+	content: url('../img/illustration-woman-online-mobile.svg');
+	width: 23.7rem;
+	position: absolute;
+	top: -11rem;
+	left: 50%;
+	translate: -50%;
+}
+
+h1 {
+	font-size: 3.2rem;
+	text-align: center;
+	color: var(--very-dark-desaturated-blue);
+	margin-bottom: 1.5rem;
+}
+
+.question {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 5.1rem;
+	border-bottom: 0.1rem solid var(--light-grayish-blue);
+}
+
+span {
+	font-size: 1.3rem;
+	color: var(--very-dark-grayish-blue);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+span.active {
+	padding-top: 1.6rem;
+}
+
+span:hover,
+span:focus {
+	cursor: pointer;
+	outline: none;
+	color: var(--soft-red);
+}
+
+.active {
+	color: var(--very-dark-desaturated-blue);
+	font-weight: 700;
+}
+
+span > img {
+	width: fit-content;
+	height: fit-content;
+	display: inline-block;
+}
+
+.active img {
+	rotate: 180deg;
+}
+
+p {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.8rem;
+	color: var(--dark-grayish-blue);
+	display: none;
+	width: 85%;
+	padding: 1rem 0 1.7rem;
+}
+
+.active + p {
+	display: inline-block;
+}

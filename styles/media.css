@@ -1,0 +1,104 @@
+@media screen and (min-width: 768px) {
+	body {
+		align-items: center;
+	}
+
+	.container {
+		max-width: 68rem;
+		position: relative;
+		margin: 2.4rem 2.4rem 2.4rem 7rem;
+	}
+
+	main {
+		width: 68rem;
+		padding: 6.3rem 2.4rem;
+		display: flex;
+		min-height: 50.8rem;
+		flex-direction: column;
+		align-items: flex-end;
+		overflow: hidden;
+	}
+
+	main::before {
+		content: url('../img/bg-pattern-desktop.svg');
+		scale: 75%;
+		top: -27rem;
+		left: -37rem;
+		position: absolute;
+	}
+
+	main::after {
+		content: url('../img/illustration-woman-online-desktop.svg');
+		scale: 75%;
+		top: 8rem;
+		left: 3rem;
+	}
+
+	.container::after {
+		content: url('../img/illustration-box-desktop.svg');
+		position: absolute;
+		scale: 75%;
+		top: 20rem;
+		left: -11.5rem;
+	}
+
+	h1,
+	.question {
+		width: 28rem;
+	}
+
+	h1 {
+		text-align: left;
+		margin-bottom: 2.1rem;
+	}
+
+	p {
+		width: 97%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		max-width: 92rem;
+		margin-left: 10.4rem;
+	}
+
+	main {
+		width: 92rem;
+		padding: 6.3rem 9.3rem;
+	}
+
+	main::before {
+		scale: 100%;
+		top: -29.5rem;
+		left: -45.5rem;
+	}
+
+	main::after {
+		scale: 100%;
+		top: 7rem;
+		left: 4rem;
+	}
+
+	.container::after {
+		scale: 100%;
+		top: 20rem;
+		left: -12rem;
+	}
+
+	h1,
+	.question {
+		width: 35rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		margin-left: 2.4rem;
+		min-height: 50.4rem;
+	}
+
+	span {
+		font-size: 1.4rem;
+	}
+}
